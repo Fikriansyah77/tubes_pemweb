@@ -16,4 +16,19 @@ class flightclass extends Model
         'price',
         'total_seats'
     ];
+
+    public function flight()
+    {
+        return $this->belongsTo(flight::class);
+    } 
+
+    public function facilities()
+    {
+        return $this->belongsToMany(facility::class, 'flight_class_facility', 'flight_class_id', 'facility_id');
+    }
+
+    public function transaction()
+    {
+        return $this->hasMany(transaction::class);
+    }
 }

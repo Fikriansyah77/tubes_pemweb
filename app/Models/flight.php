@@ -14,4 +14,29 @@ class flight extends Model
         'flight_number',
         'airline_id',
     ];
+
+    public function airline()
+    {
+        return $this->belongsTo(airline::class);
+    }
+
+    public function segments()
+    {
+        return $this->hasMany(flightsegment::class);
+    }
+
+    public function classes()
+    {
+        return $this->hasMany(flightclass::class);
+    }
+
+    public function seats()
+    {
+        return $this->hasMany(flightseat::class);
+    }
+
+    public function transaction()
+    {
+        return $this->hasMany(transaction::class);
+    }
 }
