@@ -18,6 +18,6 @@ class facility extends Model
 
     public function classes()
     {
-        return $this->belongsToMany(flightclass::class, 'flight_class_facility', 'facility_id', 'flight_class_id');
+        return $this->belongsToMany(flightclass::class, 'flight_class_facility', 'facility_id', 'flightclass_id');
     }
 }

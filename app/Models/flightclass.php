@@ -24,7 +24,7 @@ class flightclass extends Model
 
     public function facilities()
     {
-        return $this->belongsToMany(facility::class, 'flight_class_facility', 'flight_class_id', 'facility_id');
+        return $this->belongsToMany(facility::class, 'flight_class_facility', 'flightclass_id', 'facility_id');
     }
 
     public function transaction()
