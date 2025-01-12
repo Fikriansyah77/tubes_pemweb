@@ -10,16 +10,16 @@ class ListTransactions extends ListRecords
 {
     protected static string $resource = TransactionResource::class;
 
-    public function getHeaderWidgets(): array
-    {
-        return [
-        TransactionOverview::class
-        ];
-    }
-    // protected function getHeaderActions(): array
+    // public function getHeaderWidgets(): array
     // {
-    // return [
-    //         Actions\CreateAction::make(),
+    //     return [
+    //     TransactionOverview::class
     //     ];
     // }
+    protected function getHeaderActions(): array
+    {
+    return [
+            Actions\CreateAction::make(),
+        ];
+    }
 }
