@@ -12,6 +12,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>SELAMAT DATANG DI WEB KAMI</h1>
+    <h1>SELAMAT DATANG</h1>
+    <h2>Di WEB KAMI</h2>
 </body>
 </html>
