@@ -15,6 +15,8 @@
     @include('includes.navbar')
 
     @yield('content')
+    <p>Farisy Ilman Syarif 152023135</p>
+    <p>saya sudah ngerjain</p>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="{{ asset('assets/js/index.js')}}"></script>
