@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="{{ asset('assets/output.css') }}" rel="stylesheet" />
+    <link href="{{ asset('assets/images/js/output.css') }}" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
     rel="stylesheet"/>
 
@@ -11,15 +11,16 @@
 </head>
 
 <body>
+    @yield('include')
 
     @include('includes.navbar')
 
     @yield('content')
-    <p>Farisy Ilman Syarif 152023135</p>
-    <p>saya sudah ngerjain</p>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="{{ asset('assets/js/index.js')}}"></script>
+    <script src="{{ asset('assets/images/js/index.js')}}"></script>
+
+    @yield('scripts')
 </body>
 
 </html>

@@ -2,6 +2,14 @@
 
 namespace App\Providers;
 
+use App\Interfaces\airlineRepositoryInterface;
+use App\Interfaces\airportRepositoryInterface;
+use App\Interfaces\flightRepositoryInterface;
+use App\Interfaces\transactionRepositoryInterface;
+use App\Repositories\airlineRepository;
+use App\Repositories\airportRepository;
+use App\Repositories\flightRepository;
+use App\Repositories\transactionRepository;
 use Illuminate\Support\ServiceProvider;
 
 class RepositoryServiceProvider extends ServiceProvider

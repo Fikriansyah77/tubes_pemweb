@@ -17,6 +17,10 @@ class flightsegment extends Model
         'time'
     ];
 
+    protected $casts =[
+        'time' => 'datetime'
+    ];
+
     public function flight()
     {
         return $this->belongsTo(flight::class);

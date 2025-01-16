@@ -4,7 +4,7 @@ namespace App\Interfaces;
 
 interface airportRepositoryInterface
 {
-    public function getAllairports();
+    public function getAllAirports();
 
     public function getairportBySlug($slug);
 
