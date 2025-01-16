@@ -7,7 +7,7 @@ use App\Models\airport;
 
 class airportRepository implements airportRepositoryInterface
 {
-    public function getAllairport()
+    public function getAllairports()
     {
         return airport::all();
     }

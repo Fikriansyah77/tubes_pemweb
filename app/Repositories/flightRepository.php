@@ -18,7 +18,7 @@ class flightRepository implements flightRepositoryInterface
             });
         }
 
-        if (!empty($filter['destination'])) {
+        if (!empty($filter['arrival'])) {
             $flight->whereHas('segments', function ($query) use ($filter) {
                 $query->where('airport_id', $filter['destination'])
                     ->orderBy('sequence', 'desc')
